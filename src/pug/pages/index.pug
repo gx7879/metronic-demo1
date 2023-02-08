@@ -1,0 +1,31 @@
+extends ../layout/main
+
+block variables
+  - var page = 'index'
+  - var title = 'Webpack + Pug';
+  - var description = 'The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free.';
+  - var pageClass = 'index-page';
+
+block content
+  section
+    .container
+      +item('item title', 'item descr')
+      +item('item title', 'item descr')
+      +item('item title', 'item descr')
+  example-component
+
+
+block script
+  // begin::Page Custom Javascript(used by this page)
+  script(src='assets/js/custom/widgets.js')
+  script(src='assets/js/custom/apps/chat/chat.js')
+  script(src='assets/js/custom/modals/create-app.js')
+  script(src='assets/js/custom/modals/upgrade-plan.js')
+  script(src='assets/js/custom/intro.js')
+  // end::Page Custom Javascript
+  script(type='text/javascript').
+    const foo = true;
+    let bar = function() {};
+    if (foo) {
+    bar(1 + 5)
+    }

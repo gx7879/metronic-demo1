@@ -1,0 +1,445 @@
+// begin::Modal - Invite Friends
+.modal.fade#kt_modal_invite_friends(tabindex='-1', aria-hidden='true')
+  // begin::Modal dialog
+  .modal-dialog.mw-650px
+    // begin::Modal content
+    .modal-content
+      // begin::Modal header
+      .modal-header.pb-0.border-0.justify-content-end
+        // begin::Close
+        .btn.btn-sm.btn-icon.btn-active-color-primary(data-bs-dismiss='modal')
+          // begin::Svg Icon | path: icons/duotune/arrows/arr061.svg
+          span.svg-icon.svg-icon-1
+            svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none')
+              rect(opacity='0.5', x='6', y='17.3137', width='16', height='2', rx='1', transform='rotate(-45 6 17.3137)', fill='black')
+              rect(x='7.41422', y='6', width='16', height='2', rx='1', transform='rotate(45 7.41422 6)', fill='black')
+          // end::Svg Icon
+        // end::Close
+      // begin::Modal header
+      // begin::Modal body
+      .modal-body.scroll-y.mx-5.mx-xl-18.pt-0.pb-15
+        // begin::Heading
+        .text-center.mb-13
+          // begin::Title
+          h1.mb-3 Invite a Friend
+          // end::Title
+          // begin::Description
+          .text-muted.fw-bold.fs-5
+            | If you need more info, please check out
+
+            a.link-primary.fw-bolder(href='#') FAQ Page
+            | .
+          // end::Description
+        // end::Heading
+        // begin::Google Contacts Invite
+        .btn.btn-light-primary.fw-bolder.w-100.mb-8
+          img.h-20px.me-3(alt='Logo', src='assets/media/svg/brand-logos/google-icon.svg')
+          | Invite Gmail Contacts
+        // end::Google Contacts Invite
+        // begin::Separator
+        .separator.d-flex.flex-center.mb-8
+          span.text-uppercase.bg-body.fs-7.fw-bold.text-muted.px-3 or
+        // end::Separator
+        // begin::Textarea
+        textarea.form-control.form-control-solid.mb-8(rows='3', placeholder='Type or paste emails here')
+        // end::Textarea
+        // begin::Users
+        .mb-10
+          // begin::Heading
+          .fs-6.fw-bold.mb-2 Your Invitations
+          // end::Heading
+          // begin::List
+          .mh-300px.scroll-y.me-n7.pe-7
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-1.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Emma Smith
+                  .fw-bold.text-muted e.smith@kpmg.com.au
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2', selected) Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  span.symbol-label.bg-light-danger.text-danger.fw-bold M
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Melody Macy
+                  .fw-bold.text-muted melody@altbox.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1', selected) Guest
+                  option(value='2') Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-26.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Max Smith
+                  .fw-bold.text-muted max@kt.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2') Owner
+                  option(value='3', selected) Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-4.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Sean Bean
+                  .fw-bold.text-muted sean@dellito.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2', selected) Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-15.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Brian Cox
+                  .fw-bold.text-muted brian@exchange.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2') Owner
+                  option(value='3', selected) Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  span.symbol-label.bg-light-warning.text-warning.fw-bold M
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Mikaela Collins
+                  .fw-bold.text-muted mikaela@pexcom.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2', selected) Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-8.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Francis Mitcham
+                  .fw-bold.text-muted f.mitcham@kpmg.com.au
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2') Owner
+                  option(value='3', selected) Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  span.symbol-label.bg-light-danger.text-danger.fw-bold O
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Olivia Wild
+                  .fw-bold.text-muted olivia@corpmail.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2', selected) Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  span.symbol-label.bg-light-primary.text-primary.fw-bold N
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Neil Owen
+                  .fw-bold.text-muted owen.neil@gmail.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1', selected) Guest
+                  option(value='2') Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-6.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Dan Wilson
+                  .fw-bold.text-muted dam@consilting.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2') Owner
+                  option(value='3', selected) Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  span.symbol-label.bg-light-danger.text-danger.fw-bold E
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Emma Bold
+                  .fw-bold.text-muted emma@intenso.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2', selected) Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-7.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Ana Crown
+                  .fw-bold.text-muted ana.cf@limtel.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1', selected) Guest
+                  option(value='2') Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  span.symbol-label.bg-light-info.text-info.fw-bold A
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Robert Doe
+                  .fw-bold.text-muted robert@benko.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2') Owner
+                  option(value='3', selected) Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-17.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') John Miller
+                  .fw-bold.text-muted miller@mapple.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2') Owner
+                  option(value='3', selected) Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  span.symbol-label.bg-light-success.text-success.fw-bold L
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Lucy Kunic
+                  .fw-bold.text-muted lucy.m@fentech.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2', selected) Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4.border-bottom.border-gray-300.border-bottom-dashed
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-10.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Ethan Wilder
+                  .fw-bold.text-muted ethan@loop.com.au
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1', selected) Guest
+                  option(value='2') Owner
+                  option(value='3') Can Edit
+              // end::Access menu
+            // end::User
+            // begin::User
+            .d-flex.flex-stack.py-4
+              // begin::Details
+              .d-flex.align-items-center
+                // begin::Avatar
+                .symbol.symbol-35px.symbol-circle
+                  img(alt='Pic', src='assets/media/avatars/150-26.jpg')
+                // end::Avatar
+                // begin::Details
+                .ms-5
+                  a.fs-5.fw-bolder.text-gray-900.text-hover-primary.mb-2(href='#') Max Smith
+                  .fw-bold.text-muted max@kt.com
+                // end::Details
+              // end::Details
+              // begin::Access menu
+              .ms-2.w-100px
+                select.form-select.form-select-solid.form-select-sm(data-control='select2', data-hide-search='true')
+                  option(value='1') Guest
+                  option(value='2') Owner
+                  option(value='3', selected) Can Edit
+              // end::Access menu
+            // end::User
+          // end::List
+        // end::Users
+        // begin::Notice
+        .d-flex.flex-stack
+          // begin::Label
+          .me-5.fw-bold
+            label.fs-6 Adding Users by Team Members
+            .fs-7.text-muted If you need more info, please check budget planning
+          // end::Label
+          // begin::Switch
+          label.form-check.form-switch.form-check-custom.form-check-solid
+            input.form-check-input(type='checkbox', value='1', checked)
+            span.form-check-label.fw-bold.text-muted Allowed
+          // end::Switch
+        // end::Notice
+      // end::Modal body
+    // end::Modal content
+  // end::Modal dialog
+// end::Modal - Invite Friend

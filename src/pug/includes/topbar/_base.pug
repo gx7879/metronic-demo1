@@ -1,0 +1,14 @@
+// begin::Toolbar wrapper
+.d-flex.align-items-stretch.flex-shrink-0
+  // begin::Search
+  .d-flex.align-items-stretch.ms-1.ms-lg-3
+    // layout-partial:layout/search/_base.html
+  // end::Search
+  // begin::User
+  .d-flex.align-items-center.ms-1.ms-lg-3(id='kt_header_user_menu_toggle')
+    // begin::Menu wrapper
+    .cursor-pointer.symbol.symbol-30px.symbol-md-40px(data-kt-menu-trigger='click' data-kt-menu-attach='parent' data-kt-menu-placement='bottom-end')
+      img(src='assets/media/avatars/150-26.jpg' alt='user')
+    // layout-partial:layout/topbar/partials/_user-menu.html
+    // end::Menu wrapper
+  // end::User
